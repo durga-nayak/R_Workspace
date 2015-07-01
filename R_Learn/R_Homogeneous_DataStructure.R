@@ -31,9 +31,45 @@ str(student.gender)
 #Array
 
 #heterogenous
+
+#list
 student.info <- list(name = student.names, gender = student.gender, weight = student.weights, mark = student.marks)
+student.info
 str(student.info)
 student.info[1]
 typeof(student.info[1])
 student.info[[1]]
 typeof(student.info[[1]])
+
+#dataframe
+student.info <- data.frame(name = student.names, gender = student.gender, weight = student.weights, mark = student.marks)
+student.info
+#str(student.info)
+student.info[1]
+student.info[[1]]
+student.info[1:3,1:2]#row number, column number
+
+#matrix
+student.subjects <- c("Physics", "Chemistry")
+student.marks.physics <- c(10L, 20L, 30L)
+student.marks.chemistry <- c(20L, 30L, 40L)
+student.marks <- rbind(student.marks.physics, student.marks.chemistry)
+student.marks
+
+student.marks <- cbind(student.marks.physics, student.marks.chemistry)
+colnames(student.marks) <- student.subjects
+rownames(student.marks) <- student.names
+student.marks
+student.marks[2,1:2]
+colSums(student.marks)
+rowsum(student.marks)
+
+
+#array
+student.marks.class1 <- student.marks
+student.marks.class1
+student.marks.class2 <- student.marks + 1
+student.marks.class2
+student.marks.collection <- array(c(student.marks.class1, student.marks.class2), dim = c(3,2,2))
+student.marks.collection
+
