@@ -1,0 +1,18 @@
+{
+    "contents" : "#Atomic Vector\nstudent.names <- c(\"Rax\",\"Max\",\"Tax\")\nstudent.marks <- c(10,20,30)\nstudent.percentage <- c(20L, 30L, 40L)\nis.character(student.names)\nis.numeric(student.marks)\nis.integer(student.percentage)\nstr(student.percentage)\n\n#extracting elements\nstudent.names[1:2]\nstudent.marks[student.marks > 20]\n#Atomic vector using command vector\nvector(\"character\",length = 3)\nvector(\"integer\",length = 3)\nvector(\"numeric\",length = 3)\nvector(\"logical\",length = 3)\n\n#coercion\nstudent.weights <- c(10, 20, \"30.5\")\nstudent.weights\nas.character(student.weights)\nas.integer(student.weights)\nstr(student.weights)\n#factor\nstudent.gender <- factor(c(\"Male\",\"Female\",\"Male\"))\nstr(student.gender)\n\n#Matrix\n\n#Array\n\n#heterogenous\n\n#list\nstudent.info <- list(name = student.names, gender = student.gender, weight = student.weights, mark = student.marks)\nstudent.info\nstr(student.info)\nstudent.info[1]\ntypeof(student.info[1])\nstudent.info[[1]]\ntypeof(student.info[[1]])\n\n#dataframe\nstudent.info <- data.frame(name = student.names, gender = student.gender, weight = student.weights, mark = student.marks)\nstudent.info\n#str(student.info)\nstudent.info[1]\nstudent.info[[1]]\nstudent.info[1:3,1:2]#row number, column number\n\n#matrix\nstudent.subjects <- c(\"Physics\", \"Chemistry\")\nstudent.marks.physics <- c(10L, 20L, 30L)\nstudent.marks.chemistry <- c(20L, 30L, 40L)\nstudent.marks <- rbind(student.marks.physics, student.marks.chemistry)\nstudent.marks\n\nstudent.marks <- cbind(student.marks.physics, student.marks.chemistry)\ncolnames(student.marks) <- student.subjects\nrownames(student.marks) <- student.names\nstudent.marks\nstudent.marks[2,1:2]\ncolSums(student.marks)\nrowsum(student.marks)\n\n\n#array\nstudent.marks.class1 <- student.marks\nstudent.marks.class1\nstudent.marks.class2 <- student.marks + 1\nstudent.marks.class2\nstudent.marks.collection <- array(c(student.marks.class1, student.marks.class2), dim = c(3,2,2))\nstudent.marks.collection\n\n",
+    "created" : 1436297101005.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3886038936",
+    "id" : "50809E96",
+    "lastKnownWriteTime" : 1435770218,
+    "path" : "~/R/R_Workspace/R_Learn/R_Homogeneous_DataStructure.R",
+    "project_path" : "R_Homogeneous_DataStructure.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
