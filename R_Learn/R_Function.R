@@ -84,7 +84,13 @@ library("parallel")
 detach(package:parallel, unload=TRUE)
 
 setRepositories()
+#Sys.setenv(JAVA_HOME='C:\\Program Files\\Java\\jre7')
+Sys.getenv(JAVA_HOME)
+library(XLConnect)
+install.packages("XLConnect")
 
-install.packages()
-update.packages(ask = FALSE)
-remove.packages()
+install.packages('rJava')
+library("rJava")
+
+
+

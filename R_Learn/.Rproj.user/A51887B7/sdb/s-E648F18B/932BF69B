@@ -1,0 +1,18 @@
+{
+    "contents" : "student.physics.quiz.marks <- c(10L, 20L, 30L)\nstudent.physics.viva.marks <- c(10L, 20L, 30L)\nGetTotalMarks <- function(quiz.marks, viva.marks, ...){\n  total.marks <- quiz.marks + viva.marks + ...\n  avg.marks <- ave(quiz.marks,viva.marks)\n  return(list(total = total.marks, avg = avg.marks))\n}\nstudent.physics.total.marks <- GetTotalMarks(viva.marks = student.physics.viva.marks,quiz.marks = student.physics.quiz.marks)\nstudent.physics.total.marks\n\nstudent.physics.total.marks <- GetTotalMarks(viva.marks = student.physics.viva.marks,quiz.marks = student.physics.quiz.marks)\nstudent.physics.total.marks\n\nstudent.physics.total.marks <- GetTotalMarks(viva.marks = student.physics.viva.marks,quiz.marks = student.physics.quiz.marks, c(10L, 20L, 30L))\nstudent.physics.total.marks\n\n#lazy evaluation\n\n#switch\nGetSummeryMarks <- function(total.marks, summary.type){\n  summary <- switch (summary.type,\n    \"mean\" = {mean(total.marks)\n      },\n    \"variance\" = {var(total.marks)\n      },\n    \"median\" = {median(total.marks)},\n    \"Not Implemented\"\n  )\n  summary\n}\n\nGetSummeryMarks(c(10L, 20L, 30L), \"median\")\n\n#vectorized if\nstudent.physics.viva.marks\nifelse(student.physics.viva.marks >= 15L,c(\"R\",\"S\",\"A\"), c(\"D\",\"A\",\"X\"))\n\n#repeat\nGetEvenNumbers <- function(max.val){\n  init.val <- 0\n  repeat{\n    if (init.val <= max.val && (init.val%%2) == 0){\n      print(init.val)\n      init.val <- init.val + 1\n      next\n    } else if(init.val > max.val) {\n      break\n    } else {\n      init.val <- init.val + 1\n      next\n    }\n  }\n  init.val <- 0\n  #while\n  while(init.val <= max.val){\n    if ((init.val%%2) == 0){\n      print(init.val)\n      \n    } \n    init.val <- init.val + 1\n  }\n  \n  #for\n  for (mark in student.physics.quiz.marks) {\n    print(mark)\n  }\n  \n  \n  #apply\n  student.marks <- matrix(c(10L, 20L, 30L,\n                            40L, 50L, 60L,\n                            70L, 80L, 90L), nrow = 3, ncol = 3, byrow = TRUE)\n  rownames(student.marks) <- c(\"rAHUL\", \"sANTA\", \"BANTA\")\n  colnames(student.marks) <- c(\"Phys\",\"Math\",\"Chem\")\n  apply(student.marks, 1, sum)\n  apply(student.marks, 2, mean)\n  colnames(student.marks)[apply(student.marks, 1, which.max)]\n}\n\nGetEvenNumbers(10L)\n\nsearch()\nlibrary(\"parallel\")\ndetach(package:parallel, unload=TRUE)\n\nsetRepositories()\n#Sys.setenv(JAVA_HOME='C:\\\\Program Files\\\\Java\\\\jre7')\nSys.getenv(JAVA_HOME)\nlibrary(XLConnect)\ninstall.packages(\"XLConnect\")\n\ninstall.packages('rJava')\nlibrary(\"rJava\")\n\n\n\n",
+    "created" : 1436297131174.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1176149578",
+    "id" : "932BF69B",
+    "lastKnownWriteTime" : 1436726813,
+    "path" : "~/R/R_Workspace/R_Learn/R_Function.R",
+    "project_path" : "R_Function.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
