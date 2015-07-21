@@ -1,0 +1,18 @@
+{
+    "contents" : "getwd()\nsetwd(\".\")\nurl <- \"http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data\"\nlocal <- file.path(\"iris.data\")\ndownload.file(url, local)\niris.dataset <- read.csv(local,FALSE)\nstr(iris.dataset)\ntypeof(iris.dataset)\n\n#lapply\nas\niris.dataset\ncol1 <- as.vector(iris.dataset[,1])\ncol1\nlapply(as, mean)\ntypeof(iris.dataset[,1])\nstr(iris.dataset[,1])\n\n\n\n\nprx <- \"http://11.164.4.22:8080\"\nSys.setenv(\"http_proxy\", prx)\nSys.setenv(\"http_proxy_user\", \"nayakdur:hapi###sud1\")\ndownload.file(\"https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data\", .opts = opts)\n",
+    "created" : 1437479484559.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2476877880",
+    "id" : "F162FFB5",
+    "lastKnownWriteTime" : 1437482766,
+    "path" : "~/R_Workspace/R_Learn/R_Clean_Data.R",
+    "project_path" : "R_Clean_Data.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

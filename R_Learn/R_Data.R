@@ -5,6 +5,7 @@ local <- file.path("iris.data")
 download.file(url, local)
 iris.dataset <- read.table(local)
 str(iris.dataset)
+iris.dataset
 
 
 #========XLS=========
