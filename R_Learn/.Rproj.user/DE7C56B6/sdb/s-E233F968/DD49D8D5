@@ -1,0 +1,17 @@
+{
+    "contents" : "getwd()\n#setwd(\".\")\nurl <- \"https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data\"\nlocal <- file.path(\"iris.data\")\ndownload.file(url, local)\niris.dataset <- read.table(local)\nstr(iris.dataset)\n\n\n#========XLS=========\n#load xls package\nsearch()\nlibrary(XLConnect)\ninstall.packages(\"XLConnect\")\n#remove.packages(XLConnect)\nlibrary(XLConnectJars)\ninstall.packages(\"XLConnectJars\")\nR.Version()\ninstall.packages(\"rJava\")\nlibrary(rJava)\nsearch()\nSys.getenv(\"R_ARCH\")\nsystem(\"java -version\")\nSys.getenv(\"JAVA_HOME\")\nSys.setenv(\"JAVA_HOME\", \"C:\\\\Program Files\\\\Java\\\\jre6\")\n\nlocal <- file.path(\"irisdata.xls\")\niris.xlsdata <- readWorksheetFromFile(local, sheet=1)\niris.xlsdata\n\n.libPaths()\n",
+    "created" : 1436774345866.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2650171289",
+    "id" : "DD49D8D5",
+    "lastKnownWriteTime" : 1436780760,
+    "path" : "~/R_Workspace/R_Learn/R_Data.R",
+    "project_path" : "R_Data.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

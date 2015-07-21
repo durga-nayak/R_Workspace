@@ -1,0 +1,17 @@
+{
+    "contents" : "#Global Environment\nmatch.score <- 100 #assign operator\nmatch.score #print score\nassign(\"match.score\",200) #assign function\nmatch.score #print score\n\n#Custom Environment\nmatch.environment <- new.env() #create custom environment\nparent.env(match.environment)\nmatch.environment$'match.score' <- 300 #assign cust env variable\nmatch.environment$'match.score' #print cust env variable\n\n#Operator\n\n#Arithmatic\n10 + 5\n10 - 5\n10 / 5\n10 * 3\n10 ^ 5\nformat(10 ** 5, scientific = FALSE)\n10 %% 3\n10 %/% 3\n1 / 0\n#Math Function\n\nfactorial(5)\nlog(2 , base = 10)\n\n#special constant\npi\n\n#Special Number\n-1 / 0\n1 / 0\nInf + 5\nis.finite(1/0)\nis.infinite(1/0)\nis.nan(NA+5)\n\n#Logical\n\n#Vectorized operation\nstudent.marks <- c(10,20,30,40)\nstudent.marks\nmean(student.marks)\nsqrt(student.marks)\nstudent.marks <- student.marks + 5\nstudent.marks >= 25",
+    "created" : 1436774330374.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3955755664",
+    "id" : "F6AD159E",
+    "lastKnownWriteTime" : 1436770827,
+    "path" : "~/R_Workspace/R_Learn/R_Operator.R",
+    "project_path" : "R_Operator.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

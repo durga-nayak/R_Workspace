@@ -1,0 +1,18 @@
+{
+    "contents" : ".libPaths(\"C:\\\\Users\\\\NAYAKDUR\\\\Documents\\\\R_Workspace\\\\RLibrary\")\ninstall.packages(\"RODBC\",type=\"source\", lib = \"C:\\\\Users\\\\NAYAKDUR\\\\Documents\\\\R_Workspace\\\\RLibrary\")\ninstall.packages(\"ROracle\",type=\"source\", lib = \"C:\\\\Users\\\\NAYAKDUR\\\\Documents\\\\R_Workspace\\\\RLibrary\")\nlibrary(ROracle)\n.libPaths()\n",
+    "created" : 1436781019336.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "452578576",
+    "id" : "34807322",
+    "lastKnownWriteTime" : 1436790556,
+    "path" : "~/R_Workspace/R_Learn/R_Database.R",
+    "project_path" : "R_Database.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

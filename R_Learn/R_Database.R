@@ -1,0 +1,5 @@
+.libPaths("C:\\Users\\NAYAKDUR\\Documents\\R_Workspace\\RLibrary")
+install.packages("RODBC",type="source", lib = "C:\\Users\\NAYAKDUR\\Documents\\R_Workspace\\RLibrary")
+install.packages("ROracle",type="source", lib = "C:\\Users\\NAYAKDUR\\Documents\\R_Workspace\\RLibrary")
+library(ROracle)
+.libPaths()

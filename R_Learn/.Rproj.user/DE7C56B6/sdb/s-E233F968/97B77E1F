@@ -1,0 +1,18 @@
+{
+    "contents" : "search()\n.libPaths()\n.libPaths(\"C:\\\\Users\\\\NAYAKDUR\\\\Documents\\\\R_Workspace\\\\RLibrary\")\nlibrary(XLConnect)\ninstall.packages(\"XLConnect\", lib = \"C:\\\\Users\\\\NAYAKDUR\\\\Documents\\\\R_Workspace\\\\RLibrary\")\n",
+    "created" : 1436779834439.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1851049938",
+    "id" : "97B77E1F",
+    "lastKnownWriteTime" : 1436780949,
+    "path" : "~/R_Workspace/R_Learn/R_LoadData.R",
+    "project_path" : "R_LoadData.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

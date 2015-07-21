@@ -1,0 +1,5 @@
+search()
+.libPaths()
+.libPaths("C:\\Users\\NAYAKDUR\\Documents\\R_Workspace\\RLibrary")
+library(XLConnect)
+install.packages("XLConnect", lib = "C:\\Users\\NAYAKDUR\\Documents\\R_Workspace\\RLibrary")
